@@ -1,0 +1,114 @@
+/* 
+    Themes
+*/
+
+//Autumn Harvest    
+
+$first-color: #03611F;
+$second-color: #7AAD33;
+$third-color: #FFD802;
+$forth-color: #E8880A;
+$fifth-color: #FF4822;
+
+//Maximus Festas e Eventos 
+
+/*$first-color: #D60000;
+$second-color: #FF530D;
+$third-color: #FFC801;
+$forth-color: #93C700;
+$fifth-color: #0E99DA;*/
+
+
+// Tema custom
+$first-color: #008A71;
+$second-color: #00D0A4;
+$third-color: #EADCD7;
+$forth-color: #2B2C2F;
+$fifth-color: #F03106;
+
+@font-face{
+  font-family: Chunkfive;
+  src: url('/fonts/Chunkfive.otf');
+}
+
+body {
+        margin-top: 100px; /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
+}
+
+footer {
+        margin: 50px 0;
+}
+
+.navbar-inner {
+  background-color: $second-color;
+  border-bottom: 4px solid $first-color;
+
+  .navbar-nav {
+    margin-top: 30px;
+    li {
+      background-color: $second-color;
+      a {
+        font-weight: bold;
+        font-size: 16px;
+        height: 25px;
+        color: white;
+        display: block;
+        padding-top: 1px;
+        padding-bottom: -10px;
+        &:hover {
+          color: $fifth-color;
+          background-color: $third-color;
+          border-radius: 10px;          
+        }
+
+
+      }
+      ul{
+        background-color: $first-color;
+        border-radius: 5px;
+      }
+
+    }
+  }
+ }
+
+#carousel-imagini{
+  margin: 30px 0px 0px 0px;
+}
+
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family:  Chunkfive, sans-serif, Helvetica, Arial, sans-serif;
+}
+
+@media(max-width:767px){
+  h3{
+    font-size: 24px;
+  }
+}
+
+@media(max-width:300px){
+  h3{
+    font-size: 16px;
+  }
+}
+
+
+/* BOOTSTRAP CONFIGURATIONS */
+
+/* Orange Pill button instead of black */
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: $third-color;
+  color: $fifth-color;
+  border-radius: 10px; 
+}
+
+/* Culoare caret */
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+border-top-color: #999999;
+border-bottom-color: #999999;
+}
