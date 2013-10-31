@@ -42,7 +42,7 @@ footer {
 .navbar-inner {
   background-color: $second-color;
   border-bottom: 4px solid $first-color;
-  .collapse.navbar-collapse.navbar-ex1-collapse {
+  .navbar-ex1-collapse {
     margin-top: 30px;
     .navbar-nav {
       li {
@@ -70,6 +70,29 @@ footer {
 
       }
     }
+    li {
+        background-color: $second-color;
+        a {
+          font-weight: bold;
+          font-size: 16px;
+          height: 25px;
+          color: white;
+          display: block;
+          padding-top: 1px;
+          padding-bottom: -10px;
+          &:hover {
+            color: $fifth-color;
+            background-color: $third-color;
+            border-radius: 10px;          
+          }
+
+
+        }
+        ul{
+          background-color: $first-color;
+          border-radius: 5px;
+        }
+      }
   } 
   .telefon {
     clear: none;
