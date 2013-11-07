@@ -26,9 +26,21 @@ $third-color: #EADCD7;
 $forth-color: #2B2C2F;
 $fifth-color: #F03106;
 
-@font-face{
+$lightgray: #d3d3d3;
+
+@font-face {
   font-family: Chunkfive;
   src: url('/fonts/Chunkfive.otf');
+}
+
+@font-face {
+  font-family: SintonyRegular;
+  src: url('/fonts/Sintony-Regular.ttf');
+}
+
+@font-face {
+  font-family: Viga;
+  src: url('/fonts/Viga-Regular.ttf');
 }
 
 body {
@@ -41,7 +53,9 @@ footer {
 
 .navbar-inner {
   background-color: $second-color;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   border-bottom: 4px solid $first-color;
+
   .navbar-ex1-collapse {
     margin-top: 30px;
     .navbar-nav {
@@ -110,6 +124,22 @@ h3 {
   font-size: 30px;
   text-align: center;
   font-family:  Chunkfive, sans-serif, Helvetica, Arial, sans-serif;
+}
+
+
+footer{
+  padding-top: 50px;
+  margin-bottom: 0px;
+  background-color: black;
+  li { 
+    color: $lightgray;
+    font-family: SintonyRegular, sans-serif, Helvetica, Arial, sans-serif;
+    &:first-child {
+      font-family: Chunkfive, sans-serif, Helvetica, Arial, sans-serif;
+      color: white;
+    }
+  }
+  
 }
 
 @media(min-width:1170px){

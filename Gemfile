@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 1.2'
 # Styling
 gem 'zurb-foundation'
 gem 'bootstrap-sass-rails'
+gem "font-awesome-rails"
 
 
 # Devise
