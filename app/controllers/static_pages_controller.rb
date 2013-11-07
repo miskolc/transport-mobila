@@ -9,6 +9,24 @@ class StaticPagesController < ApplicationController
   end
 
   def portofoliu
+    @firme = ["Mega Image", 
+              "Coca Cola" ,
+              "Billa",
+              "Cosmote",
+              "Ambasada Frantei",
+              "Kaufland",
+              "Realitatea",
+              "Promenada",
+              "DAAS Impex",
+              "AFI",
+              "KMG",
+              "Premier Moving",
+              "Lamonza",
+              "Galeria Real",
+              "UTI Grup",
+              "Liceul Francez \"Anna de Noailles\"",
+              "Ambasada Iordaniei",
+              "Liceul Tonitza"]
   end
 
   def contact

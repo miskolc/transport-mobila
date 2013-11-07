@@ -1,2 +1,14 @@
-<h1>StaticPages#portofoliu</h1>
-<p>Find me in app/views/static_pages/portofoliu.html.erb</p>
+<div class="container">
+  <div class="col-md-8">
+    <h3>Un portofoliu impresionant din 2007</h3><div><p>Oferim servicii la cele mai inalte standarde. O pot confirma clientii nostri, firme dintre cele mai de renume de pe piata din Romania, institutii romanesti sau straine, sau persoanele fizice care ne recomanda prietenilor.</p><p>Dorim in aceasta pagina sa multumim tuturor clientilor pentru increderea acordata, si de ce nu, sa putem scrie si numele firmei dumneavoastra aici.</p><br/></div>
+  </div>  
+  <div class="col-md-4">
+    <h4>Au apelat la noi:</h4>
+    <ul>
+    <% @firme.each do |firma| %>
+      <li><%= firma %></li>
+    <% end %>
+      <li id="other-clients">+alti zeci de clienti multumiti</li>
+    </ul>
+  </div>
+</div>
