@@ -13,24 +13,26 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#acasa">Acasa</a></li>
+        <li><%= link_to "Acasa", root_path %></a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             Servicii <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Transport mobila</a></li>
-            <li><a href="#">Transport bagaje</a></li>
-            <li><a href="#">Mutari locuinte</a></li>
-            <li><a href="#">Mutari firme</a></li>
-            <li><a href="#">Mutari seifuri</a></li>
-            <li><a href="#">Mutari vitrine</a></li>
-            <li><a href="#">Inchiriere personal mutari</a></li>
+            <li><%= link_to "Transport mobila", transport_mobila_path %></li>
+            <li><%= link_to "Transport bagaje", transport_bagaje_path %></li>
+            <li><%= link_to "Mutari locuinte" , mutari_locuinte_path %></li>
+            <li><%= link_to "Mutari firme"    , mutari_firme_path %></li>
+            <li><%= link_to "Mutari seifuri"  , mutari_seifuri_path %></li>
+            <li><%= link_to "Mutari vitrine"  , mutari_vitrine_path %></li>
+            <li><%= link_to "Inchiriere personal mutari" , inchiriere_personal_mutari_path %></li>
           </ul>
         </li>
-        <li><a href="#despre_noi">Despre Noi</a></li>
-        <li><a href="#Portofoliu">Portofoliu</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><%= link_to "Despre noi", despre_noi_path %></li>
+        <li class="divider-vertical"></li>
+        <li><%= link_to "Portofoliu", portofoliu_path %></li>
+        <li class="divider-vertical"></li>
+        <li><%= link_to "Contact", contact_path %></li>
       </ul>
       <span class="telefon pull-right" id="telefon-computer">
         <i class="glyphicon glyphicon-phone"></i>

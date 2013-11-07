@@ -1,9 +1,21 @@
 TransportMobila::Application.routes.draw do
-  get "static_pages/acasa"
-  get "static_pages/servicii"
-  get "static_pages/despre_noi"
-  get "static_pages/portofoliu"
-  get "static_pages/contact"
+  
+  
+
+  root "static_pages#acasa"
+ 
+  get "servicii"  => "static_pages#servicii"
+  get "despre-noi" => "static_pages#despre_noi", as: :despre_noi
+    get "transport-mobila" => "static_pages#transport_mobila", as: :transport_mobila
+    get "transport-bagaje" => "static_pages#transport_bagaje", as: :transport_bagaje
+    get "mutari-locuinte" => "static_pages#mutari_locuinte", as: :mutari_locuinte
+    get "mutari-firme" => "static_pages#mutari_firme", as: :mutari_firme
+    get "mutari-seifuri" => "static_pages#mutari_seifuri", as: :mutari_seifuri
+    get "mutari-vitrine" => "static_pages#mutari_vitrine", as: :mutari_vitrine
+    get "inchiriere-personal-mutari" => "static_pages#inchiriere_personal_mutari", as: :inchiriere_personal_mutari
+  get "portofoliu" => "static_pages#portofoliu"
+  get "contact" => "static_pages#contact"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
