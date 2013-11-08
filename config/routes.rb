@@ -2,6 +2,7 @@ TransportMobila::Application.routes.draw do
   
   
 
+  devise_for :admins
   root "static_pages#acasa"
  
   get "servicii"  => "static_pages#servicii"
