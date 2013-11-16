@@ -2,7 +2,13 @@ TransportMobila::Application.routes.draw do
   
   
 
-  devise_for :admins, skip: [:registrations]
+  devise_for :admins, skip: [:registrations] 
+
+
+  devise_scope :admin do
+    get "/sign_in", to: "devise/sessions#new"
+  end  
+
   root "static_pages#acasa"
  
   get "servicii"  => "static_pages#servicii"
