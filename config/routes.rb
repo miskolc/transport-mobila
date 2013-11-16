@@ -2,7 +2,7 @@ TransportMobila::Application.routes.draw do
   
   
 
-  devise_for :admins
+  devise_for :admins, skip: [:registrations]
   root "static_pages#acasa"
  
   get "servicii"  => "static_pages#servicii"
